@@ -1,0 +1,237 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #263746;
+}
+
+/* Navigation */
+nav {
+    background: #102b3f;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+}
+
+nav button {
+    display: none;
+}
+
+/* Hero */
+.hero {
+    height: 85vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ), url('../images/villa.jpg') center/cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* Buttons */
+.btn {
+    background: #d6ad60;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Booking */
+.booking {
+    background: #f4f4f4;
+    padding: 35px 15px;
+    text-align: center;
+}
+
+.booking form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.booking input,
+.booking select,
+.booking button {
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.booking button {
+    background: #102b3f;
+    color: white;
+    cursor: pointer;
+}
+
+/* Common Sections */
+.section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section h2,
+.about h2 {
+    margin-bottom: 15px;
+}
+
+/* Room Cards */
+.room-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.room-card {
+    background: white;
+    width: 300px;
+    padding-bottom: 20px;
+    box-shadow: 0 3px 12px #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.room-card h3,
+.room-card p {
+    margin: 15px;
+}
+
+/* About */
+.about {
+    background: #eaf0f3;
+    text-align: center;
+    padding: 60px 10%;
+    line-height: 1.8;
+}
+
+/* Facilities */
+.facilities {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.facilities div {
+    background: #f4f4f4;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: #102b3f;
+    color: white;
+    text-align: center;
+    padding: 35px;
+    line-height: 2;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    .links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 10px;
+        background: #102b3f;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .links.show {
+        display: flex;
+    }
+
+    nav button {
+        display: block;
+        background: none;
+        color: white;
+        border: none;
+        font-size: 25px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .booking form {
+        flex-direction: column;
+    }
+
+    .booking input,
+    .booking select,
+    .booking button {
+        width: 100%;
+    }
+}
+
+.booking-form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    padding: 13px;
+    background: #102b3f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
