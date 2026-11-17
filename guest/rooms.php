@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Our Rooms - Coastal Villa</title>
+    <title>Our Rooms - Ceylonora</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <nav>
-    <h2>Coastal Villa</h2>
+    <h2>Ceylonora</h2>
     <div class="links">
         <a href="../index.php">Home</a>
         <a href="rooms.php">Rooms</a>

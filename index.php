@@ -2,14 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Coastal Villa</title>
+    <title>Ceylonora | Luxury Coastal Escape</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Ceylonora, a beautiful coastal villa in Sri Lanka. Enjoy luxury rooms, ocean views and relaxing holidays.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <!-- Navigation -->
 <nav>
-    <h2>Coastal Villa</h2>
+    <h2>Ceylonora</h2>
 
     <div class="links" id="menu">
         <a href="index.php">Home</a>
@@ -24,8 +26,8 @@
 
 <!-- Hero Section -->
 <section class="hero">
-    <h1>Welcome to Coastal Villa</h1>
-    <p>Experience Luxury and Relaxation by the Ocean</p>
+    <h1>Welcome to Ceylonora</h1>
+    <p>Discover the Beauty of Ceylon</p>
     <a href="#rooms" class="btn">Explore Rooms</a>
 </section>
 
@@ -50,8 +52,8 @@
 
 <!-- Featured Rooms -->
 <section class="section" id="rooms">
-    <h2>Our Featured Rooms</h2>
-    <p>Choose your perfect accommodation</p>
+    <h2>Discover Our Rooms</h2>
+    <p>Experience comfort, elegance and luxury.</p>
 
     <div class="room-container">
 
@@ -84,10 +86,11 @@
 
 <!-- About -->
 <section class="about" id="about">
-    <h2>About Coastal Villa</h2>
+    <h2>About Ceylonora</h2>
     <p>
-        Enjoy a peaceful holiday with beautiful ocean views,
-        comfortable rooms and excellent hospitality.
+        Discover a peaceful coastal escape in Sri Lanka.
+        Enjoy beautiful ocean views, comfortable rooms
+        and exceptional hospitality.
     </p>
 </section>
 
@@ -105,15 +108,13 @@
 
 <!-- Footer -->
 <footer id="contact">
-    <h2>Coastal Villa</h2>
-    <p>Enjoy your perfect holiday with us.</p>
-    <p>Contact: info@coastalvilla.com</p>
-    <p>© 2026 Coastal Villa. All Rights Reserved.</p>
+    <h2>Ceylonora</h2>
+    <p>Discover the Beauty of Ceylon.</p>
+    <p>Contact: info@ceylonora.com</p>
+    <p>© 2026 Ceylonora. All Rights Reserved.</p>
 </footer>
 
 <script src="js/script.js"></script>
 
 </body>
 </html>
-
-
