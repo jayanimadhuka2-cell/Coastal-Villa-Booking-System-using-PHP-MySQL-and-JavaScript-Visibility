@@ -1,4 +1,11 @@
 
+<?php
+require_once __DIR__ . "/../config/database.php";
+
+$sql = "SELECT * FROM rooms ORDER BY room_id DESC";
+$result = mysqli_query($conn, $sql);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,36 +24,49 @@
 </nav>
 
 <section class="section">
+
     <h1>Our Rooms</h1>
     <p>Choose your perfect stay</p>
 
     <div class="room-container">
 
-        <div class="room-card">
-            <img src="../images/room1.jpg">
-            <h3>Deluxe Room</h3>
-            <p>Beautiful ocean view and comfortable stay.</p>
-            <h3>Rs. 15,000 / Night</h3>
-            <a href="booking.php" class="btn">Book Now</a>
-        </div>
+        <?php if ($result && mysqli_num_rows($result) > 0) { ?>
 
-        <div class="room-card">
-            <img src="../images/room2.jpg">
-            <h3>Luxury Room</h3>
-            <p>Enjoy a luxury experience with modern facilities.</p>
-            <h3>Rs. 20,000 / Night</h3>
-            <a href="booking.php" class="btn">Book Now</a>
-        </div>
+            <?php while ($room = mysqli_fetch_assoc($result)) { ?>
 
-        <div class="room-card">
-            <img src="../images/room3.jpg">
-            <h3>Family Room</h3>
-            <p>Spacious room suitable for families.</p>
-            <h3>Rs. 25,000 / Night</h3>
-            <a href="booking.php" class="btn">Book Now</a>
-        </div>
+                <div class="room-card">
+
+                    <img
+                        src="../images/<?php echo htmlspecialchars($room['image']); ?>"
+                        alt="<?php echo htmlspecialchars($room['room_name']); ?>"
+                    >
+
+                    <h3>
+                        <?php echo htmlspecialchars($room['room_name']); ?>
+                    </h3>
+
+                    <p>
+                        <?php echo htmlspecialchars($room['description']); ?>
+                    </p>
+
+                    <h3>
+                        Rs. <?php echo number_format($room['price']); ?> / Night
+                    </h3>
+
+                    <a href="booking.php" class="btn">Book Now</a>
+
+                </div>
+
+            <?php } ?>
+
+        <?php } else { ?>
+
+            <p>No rooms available at the moment.</p>
+
+        <?php } ?>
 
     </div>
+
 </section>
 
 </body>

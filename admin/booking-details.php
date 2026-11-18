@@ -44,8 +44,7 @@ if (!$booking) {
 
     <title>Booking Details - Ceylonora</title>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/admin.css?v=2">
 
 </head>
 
@@ -53,23 +52,26 @@ if (!$booking) {
 
 <aside class="sidebar">
 
-    <h2>CEYLONORA</h2>
+    <div class="admin-logo">
+            <img src="../images/logo.jpg" alt="Ceylonora Logo">
+            <h2>CEYLONORA</h2>
+            <p>ADMIN PANEL</p>
+        </div>
 
-    <p class="sidebar-label">ADMIN PANEL</p>
+    
 
     <a href="dashboard.php">Dashboard</a>
 
-    <a href="booking.php" class="active">Bookings</a>
+    <a href="booking.php">Manage Bookings</a>
 
-    <a href="room.php">Rooms</a>
+    <a href="room.php" class="active">Manage Rooms</a>
 
-    <a href="#">Customers</a>
-
-    <a href="#">Reports</a>
+    
 
     <div class="sidebar-bottom">
         <a href="../index.php">Visit Website</a>
     </div>
+    <a href="../auth/logout.php">Logout</a>
 
 </aside>
 
